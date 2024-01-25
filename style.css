@@ -732,7 +732,7 @@ body {
   background-position: inherit;
 }
 .row__img-1 {
-  background-image: url("img/work-1.PNG"),
+  background-image: url("img/my-playlist.png"),
     linear-gradient(
       to right,
       rgba(16, 119, 147, 0.352) 0%,
@@ -740,7 +740,7 @@ body {
     );
 }
 .row__img-2 {
-  background-image: url("img/work-2.PNG"),
+  background-image: url("img/for\ fun.png"),
     linear-gradient(
       to right,
       rgba(16, 119, 147, 0.352) 0%,
@@ -749,7 +749,7 @@ body {
 }
 
 .row__img-3 {
-  background-image: url("img/work-3.jpg"),
+  background-image: url("img/Christmas\ 2.png"),
     linear-gradient(
       to right,
       rgba(16, 119, 147, 0.352) 0%,
