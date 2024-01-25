@@ -769,15 +769,15 @@ body {
   display: none;
 } */
 .row__img-1:hover {
-  background-image: url("img/work-1.PNG"),
+  background-image: url("img/my-playlist.png"),
     linear-gradient(to right, transparent 0%, transparent 100%);
 }
 .row__img-2:hover {
-  background-image: url("img/work-2.PNG"),
+  background-image: url("img/for\ fun.png"),
     linear-gradient(to right, transparent 0%, transparent 100%);
 }
 .row__img-3:hover {
-  background-image: url("img/work-3.jpg"),
+  background-image: url("img/Christmas\ 2.png"),
     linear-gradient(to right, transparent 0%, transparent 100%);
 }
 
@@ -1160,23 +1160,23 @@ body {
     opacity: 0.4;
   }
   .row__img-1:hover {
-    background-image: url(img/work-1-dark.png);
+    background-image: url(img/my-playlist.png);
   }
   .row__img-2:hover {
-    background-image: url(img/work-2-dark.png);
+    background-image: url(img/for\ fun.png);
   }
   .row__img-3:hover {
-    background-image: url(img/work-3-darken.jpg);
+    background-image: url(img/Christmas\ 2.png);
   }
 
   .row__img-1 {
-    background-image: url("img/work-1-dark.png");
+    background-image: url("img/my-playlist.png");
   }
   .row__img-2 {
-    background-image: url("img/work-2-dark.png");
+    background-image: url("img/for\ fun.png");
   }
   .row__img-3 {
-    background-image: url("img/work-3-darken.jpg");
+    background-image: url("img/Christmas\ 2.png");
   }
 
   .row_img-box {
