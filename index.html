@@ -13,6 +13,7 @@
     gtag('config', 'G-KZCRTXXKB6');
   </script>
   <meta charset="UTF-8">
+  <meta name="p:domain_verify" content="2f5aa02824cefa6aa7adc6b31d0f4da8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
@@ -135,10 +136,6 @@
               d="M111.8,64A52,52,0,0,0,68,40a52,52,0,0,0-3.5,44.7A49.3,49.3,0,0,0,56,112v8a48,48,0,0,0,48,48h48a48,48,0,0,0,48-48v-8a49.3,49.3,0,0,0-8.5-27.3A52,52,0,0,0,188,40a52,52,0,0,0-43.8,24Z"
               fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
           </svg>
-        </a>
-        <!-- Pinterest Save Button -->
-         <a data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/">
-            <img src="https://assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" alt="Pin it" />
         </a>
         <!--? link for twitter -->
         <a href="https://twitter.com/i_am_smartkid2" target="_blank">
@@ -462,10 +459,9 @@
           </a>
 
         </div>
-
       </div>
     </div>
-
+  </section>
   <section class="contact sending hidden">
     <h3 class="secondary-heading" style="text-align: center;font-size: 3.2rem;margin-bottom: 2.6rem;"
       id="contact-heading">
@@ -485,6 +481,44 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
   <script type="module" src="js/script.js"></script>
+
+  <!-- Add this inside your <body> tag, preferably at the end -->
+<button id="floating-btn" style="position:fixed;bottom:40px;right:40px;z-index:9999;cursor:grab;padding:1rem 1.5rem;border-radius:50%;background:#e60023;color:#fff;border:none;box-shadow:0 2px 8px rgba(0,0,0,0.2);font-size:1.5rem;">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+    <path d="M12 2.04C6.48 2.04 2 6.52 2 12.04c0 4.21 2.66 7.8 6.41 9.09-.09-.77-.17-1.95.04-2.79.19-.8 1.23-5.09 1.23-5.09s-.31-.62-.31-1.54c0-1.44.84-2.52 1.89-2.52.89 0 1.32.67 1.32 1.47 0 .9-.57 2.25-.86 3.5-.25 1.05.53 1.91 1.57 1.91 1.89 0 3.16-2.42 3.16-5.29 0-2.19-1.48-3.83-4.18-3.83-3.04 0-4.94 2.28-4.94 4.83 0 .87.26 1.48.67 1.95.19.22.22.31.15.57-.05.19-.16.65-.21.83-.07.27-.29.36-.54.26-1.5-.61-2.18-2.25-2.18-4.1 0-3.04 2.57-6.68 7.67-6.68 4.1 0 6.8 2.97 6.8 6.16 0 4.21-2.34 7.36-5.8 7.36-1.16 0-2.25-.63-2.62-1.34l-.71 2.7c-.21.8-.63 1.8-.94 2.41.71.22 1.46.34 2.24.34 5.52 0 10-4.48 10-10S17.52 2.04 12 2.04z"/>
+  </svg>
+</button>
+
+<script>
+// filepath: c:\Users\USER\Desktop\SmarTech-main\index.html
+// ...existing code...
+const btn = document.getElementById('floating-btn');
+let isDragging = false, offsetX, offsetY;
+
+btn.addEventListener('mousedown', function(e) {
+  isDragging = true;
+  offsetX = e.clientX - btn.getBoundingClientRect().left;
+  offsetY = e.clientY - btn.getBoundingClientRect().top;
+  btn.style.cursor = 'grabbing';
+});
+
+document.addEventListener('mousemove', function(e) {
+  if (!isDragging) return;
+  btn.style.left = (e.clientX - offsetX) + 'px';
+  btn.style.top = (e.clientY - offsetY) + 'px';
+  btn.style.right = 'auto';
+  btn.style.bottom = 'auto';
+});
+
+document.addEventListener('mouseup', function() {
+  isDragging = false;
+  btn.style.cursor = 'grab';
+});
+
+btn.addEventListener('click', function() {
+  window.location.href = 'https://www.pinterest.com/smartkid222/'; // Change this to your desired URL
+});
+</script>
 
   <!-- <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCn0M3I_-g7bkTVmXTDdeuIrTRglg-Cyc&map_ids=48a55d1d737e8099&callback=initMap&v=weekly"
